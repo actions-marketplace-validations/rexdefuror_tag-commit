@@ -38,8 +38,8 @@ jobs:
             const version = 'v${{ env.PACKAGE_VERSION }}'
             const newRelease = await github.rest.repos.createRelease({
               owner: 'rexdefuror',
-              repo: 'check_artifact_exists',
+              repo: 'tag-commit',
               tag_name: version,
               name: version,
-              body: 'Release check_artifact_exists version ' + '${{ env.PACKAGE_VERSION }}'
+              body: 'Release tag-commit version ' + '${{ env.PACKAGE_VERSION }}'
             })
