@@ -17,7 +17,7 @@ This is a simple Github action that tags a commit. It sets an environment variab
     tag: 'tag_name'
     commit: 'commit_sha'
 
-- run: echo "exists - ${{ env.TAGGED }}"
+- run: echo "has been tagged - ${{ env.TAGGED }}"
 ```
 
 ## Inputs
