@@ -1,0 +1,27 @@
+name: "Tag a commit"
+author: "rexdefuror"
+description: "GitHub Action tags a commit and sets an environment variable if tagging is successful."
+branding:
+  icon: "tag"
+  color: "red"
+
+inputs:
+  tag:
+    description: "The tag to apply to the commit."
+    required: true
+  commit:
+    description: "The commit to tag."
+    required: true
+  owner:
+    description: "The owner of the repository."
+    required: true
+  repo:
+    description: "The repository to tag."
+    required: true
+  token:
+    description: "The GitHub token to use for authentication."
+    required: true
+
+runs:
+  using: "node16"
+  main: "dist/index.js"

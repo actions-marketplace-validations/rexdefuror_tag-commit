@@ -1,0 +1,30 @@
+{
+  "name": "tag-commit",
+  "version": "1.0.0",
+  "description": "A simple action that tags a commit.",
+  "main": "lib/index.js",
+  "scripts": {
+    "action": "tsc && npm run pack",
+    "pack": "ncc build --source-map --minify --license licenses.txt"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rexdefuror/tag-commit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rexdefuror/tag-commit/issues"
+  },
+  "homepage": "https://github.com/rexdefuror/tag-commit#readme",
+  "devDependencies": {
+    "@actions/core": "^1.10.0",
+    "@types/node": "^18.11.10",
+    "@vercel/ncc": "^0.34.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@actions/github": "^5.1.1"
+  }
+}
