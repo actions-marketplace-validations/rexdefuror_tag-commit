@@ -1,5 +1,3 @@
-# tag-commit
-A simple action that tags a commit.
 [![Build](https://github.com/rexdefuror/check_artifact_exists/actions/workflows/pipeline.yml/badge.svg)](https://github.com/rexdefuror/check_artifact_exists/actions/workflows/pipeline.yml/badge.svg)
 
 ## Description
